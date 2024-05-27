@@ -1,0 +1,72 @@
+//Utilidades
+@import "./utilities/fonts";
+
+
+.main-inicio {
+    height: 500px;
+    background-color: #0D0D0D;
+    color: #D9A08B;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: "Lato", sans-serif;
+        text-align: center;
+        // border:#D9D8D7,solid,3px ;
+    }
+    .forma{
+        border-radius: 50%;
+background: #D9A08B;
+box-shadow:  24px -24px 48px #8d685a,
+             -24px 24px 48px #ffd8bc;
+    }
+    // .margaritas{
+    //     display: flex;
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     img{
+    //         height: 150px;
+    //         width: 150px;
+    //     }
+    // }
+
+     div .margaritas {
+  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+       gap: 0px 0px;
+       grid-auto-flow: row;
+       grid-template-areas:
+           "seisM . . . ."
+        ". . . tresM ."
+           ". unaM . . .";
+ }
+
+.seisM {
+  grid-area: seisM;
+    img {
+        width: 30%;
+        height: 150px;
+        }
+     }
+
+     .tresM {
+         grid-area: tresM;
+
+         img {
+            width: 30%;
+        }
+     }
+
+     .unaM {
+        grid-area: unaM;
+
+         img {
+             width: 30%;
+         }
+     }
+
+}

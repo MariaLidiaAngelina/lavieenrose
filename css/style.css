@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+.main-inicio {
+  height: 500px;
+  background-color: #0D0D0D;
+  color: #D9A08B;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+  .main-inicio h1 {
+    font-family: "Lato", sans-serif;
+    text-align: center; }
+  .main-inicio .forma {
+    border-radius: 50%;
+    background: #D9A08B;
+    box-shadow: 24px -24px 48px #8d685a, -24px 24px 48px #ffd8bc; }
+  .main-inicio div .margaritas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "seisM . . . ." ". . . tresM ." ". unaM . . ."; }
+  .main-inicio .seisM {
+    grid-area: seisM; }
+    .main-inicio .seisM img {
+      width: 30%;
+      height: 150px; }
+  .main-inicio .tresM {
+    grid-area: tresM; }
+    .main-inicio .tresM img {
+      width: 30%; }
+  .main-inicio .unaM {
+    grid-area: unaM; }
+    .main-inicio .unaM img {
+      width: 30%; }
