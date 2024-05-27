@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
 .main-inicio {
-  height: 500px;
+  height: 100%;
   background-color: #0D0D0D;
   color: #D9A08B;
   display: flex;
@@ -14,7 +14,13 @@
   .main-inicio .forma {
     border-radius: 50%;
     background: #D9A08B;
-    box-shadow: 24px -24px 48px #8d685a, -24px 24px 48px #ffd8bc; }
+    box-shadow: 24px -24px 48px #8d685a, -24px 24px 48px #ffd8bc;
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 4s; }
+  .main-inicio .forma :hover {
+    width: 300px;
+    height: 300px; }
   .main-inicio div .margaritas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -25,13 +31,25 @@
   .main-inicio .seisM {
     grid-area: seisM; }
     .main-inicio .seisM img {
-      width: 30%;
-      height: 150px; }
-  .main-inicio .tresM {
-    grid-area: tresM; }
-    .main-inicio .tresM img {
-      width: 30%; }
-  .main-inicio .unaM {
-    grid-area: unaM; }
-    .main-inicio .unaM img {
-      width: 30%; }
+      width: 100px;
+      height: 100px; }
+
+.tresM {
+  grid-area: tresM; }
+  .tresM img {
+    width: 30%; }
+
+.unaM {
+  grid-area: unaM; }
+  .unaM img {
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s, transform 2s; }
+
+.unaM :hover {
+  width: 150px;
+  height: 150px;
+  transform: rotate(180deg); }
+
+@keyframes memuevo {}footer {
+  background-color: #0D0D0D; }
