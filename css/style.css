@@ -1,4 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+.header {
+  background-color: #0D0D0D !important;
+  color: #D9A08B !important; }
+  .header nav {
+    background-color: #0D0D0D !important; }
+    .header nav div a {
+      color: #D9A08B; }
+    .header nav div div ul li a {
+      color: #D9A08B; }
+    .header nav div div form button {
+      color: #D9A08B; }
+
 .main-inicio {
   height: 100%;
   background-color: #0D0D0D;
@@ -12,27 +24,40 @@
     font-family: "Lato", sans-serif;
     text-align: center; }
   .main-inicio .forma {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     border-radius: 50%;
     background: #D9A08B;
-    box-shadow: 24px -24px 48px #8d685a, -24px 24px 48px #ffd8bc;
+    box-shadow: 24px -24px 48px #8d685a, -24px 24px 48px #ffd8bc; }
+    .main-inicio .forma p {
+      color: #0D0D0D;
+      font-family: "Lato";
+      font-weight: bold; }
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px; }
+
+div .margaritas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "seisM . . . ." ". . . tresM ." ". unaM . . ."; }
+
+.seisM {
+  grid-area: seisM; }
+  .seisM img {
     width: 100px;
-    height: 100px;
-    transition: width 2s, height 4s; }
-  .main-inicio .forma :hover {
-    width: 300px;
-    height: 300px; }
-  .main-inicio div .margaritas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "seisM . . . ." ". . . tresM ." ". unaM . . ."; }
-  .main-inicio .seisM {
-    grid-area: seisM; }
-    .main-inicio .seisM img {
-      width: 100px;
-      height: 100px; }
+    height: 100px; }
 
 .tresM {
   grid-area: tresM; }
@@ -51,5 +76,22 @@
   height: 150px;
   transform: rotate(180deg); }
 
-@keyframes memuevo {}footer {
+@keyframes memuevo {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 150px;
+    top: 0px; }
+  50% {
+    left: 150px;
+    top: 150px; }
+  75% {
+    left: 0px;
+    top: 150px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
+
+footer {
   background-color: #0D0D0D; }

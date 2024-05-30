@@ -1,6 +1,7 @@
 //Utilidades
 @import "./utilities/fonts";
-
+//Secciones
+@import"./sections/header";
 
 .main-inicio {
     height: 100%;
@@ -19,90 +20,122 @@
     }
 
     .forma {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
         border-radius: 50%;
         background: #D9A08B;
         box-shadow: 24px -24px 48px #8d685a,
             -24px 24px 48px #ffd8bc;
-        width: 100px;
-        height: 100px;
-        transition: width 2s, height 4s;
-    }
-
-    .forma :hover {
-        width: 300px;
-        height: 300px;
-    }
-
-    // .margaritas{
-    //     display: flex;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    //     img{
-    //         height: 150px;
-    //         width: 150px;
-    //     }
-    // }
-
-    div .margaritas {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "seisM . . . ."
-            ". . . tresM ."
-            ". unaM . . .";
-    }
-
-    .seisM {
-        grid-area: seisM;
-
-        img {
-            // width: 30%;
-            // height: 150px;
-            width: 100px;
-            height: 100px;
-            // transition: width 2s, height 2s, transform 2s;;
+        // width: 100px;
+        // height: 100px;
+        // transition: width 2s, height 4s;
+        // position: relative;
+        // transform: rotate(180deg);
+        p {
+            color: #0D0D0D;
+            font-family: "Lato";
+            font-weight: bold;
+            
         }
     }
-
-    // .seisM :hover {
-    //     width: 150px;
-    //     height: 150px;
-    //     transform: rotate(180deg);
-
-    }
-
-    .tresM {
-        grid-area: tresM;
-
-        img {
-            width: 30%;
-        }
-    }
-
-    .unaM {
-        grid-area: unaM;
-
-        img {
-            //  width: 30%;
-            width: 100px;
-            height: 100px;
-            transition: width 2s, height 2s, transform 2s;
-        }
-
-    }
-
-    .unaM :hover {
-        width: 150px;
-        height: 150px;
-        transform: rotate(180deg);
-    }
-
-@keyframes memuevo{
 
 }
+
+.glass{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 10px;
+}
+
+div .margaritas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "seisM . . . ."
+        ". . . tresM ."
+        ". unaM . . .";
+}
+
+.seisM {
+    grid-area: seisM;
+
+    img {
+
+        width: 100px;
+        height: 100px;
+
+    }
+}
+
+// .seisM :hover {
+//     width: 150px;
+//     height: 150px;
+//     transform: rotate(180deg);}
+
+
+
+.tresM {
+    grid-area: tresM;
+
+    img {
+        width: 30%;
+    }
+}
+
+.unaM {
+    grid-area: unaM;
+
+    img {
+
+        width: 100px;
+        height: 100px;
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+}
+
+.unaM :hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(180deg);
+}
+
+@keyframes memuevo {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 150px;
+        top: 0px;
+    }
+
+    50% {
+        left: 150px;
+        top: 150px;
+    }
+
+    75% {
+        left: 0px;
+        top: 150px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
 footer {
     background-color: #0D0D0D;
 }
