@@ -56,20 +56,30 @@ div .margaritas {
 .seisM {
   grid-area: seisM; }
   .seisM img {
+    border-radius: 50%;
     width: 100px;
-    height: 100px; }
+    height: 100px;
+    position: relative;
+    animation-name: memuevo;
+    animation-duration: 4s; }
+
+.seisM :hover {
+  width: 150px;
+  height: 150px; }
 
 .tresM {
   grid-area: tresM; }
   .tresM img {
-    width: 30%; }
+    width: 30%;
+    border-radius: 50%; }
 
 .unaM {
   grid-area: unaM; }
   .unaM img {
+    border-radius: 50%;
     width: 100px;
     height: 100px;
-    transition: width 2s, height 2s, transform 2s; }
+    transition: width 2s, height 2s, transform 3s ease-in-out; }
 
 .unaM :hover {
   width: 150px;
@@ -85,13 +95,14 @@ div .margaritas {
     top: 0px; }
   50% {
     left: 150px;
-    top: 150px; }
+    top: 0px; }
   75% {
-    left: 0px;
-    top: 150px; }
+    left: 150px;
+    top: 0px; }
   100% {
     left: 0px;
     top: 0px; } }
 
 footer {
-  background-color: #0D0D0D; }
+  background-color: #0D0D0D;
+  height: 100vh; }
