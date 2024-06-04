@@ -32,6 +32,11 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 25px;
     margin: 20px; }
+    .main-lines .contiene-lines div img {
+      border-radius: 50%;
+      float: right;
+      width: 42px;
+      height: 42px; }
 
 .main-inicio {
   height: 100%;
