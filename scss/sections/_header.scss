@@ -1,27 +1,59 @@
-.header{
+.header {
     background-color: #0D0D0D !important;
     color: #D9A08B !important;
-    nav{
+
+    nav {
         background-color: #0D0D0D !important;
-   
-    div{
-        a{
-            color: #D9A08B;
-        }
-        div{
-            ul{
-                li{
-                    a{
-                        color: #D9A08B;
+       
+        div {
+            a {
+                color: #D9A08B;
+            }
+
+            a:hover {
+                background-image: linear-gradient(to top right, #BA5370, #f4e2d8);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            div {
+                background-image: linear-gradient(to top right, #bb5471, #f4e2d8)!important;
+                border-radius: 10px;
+                color: #d9a08b;
+                    border-color: #ba5370;
+                ul {
+                    color: #d9a08b;
+                    border-color: #ba5370;
+                    li {
+                        color: #d9a08b;
+                        border-color: #ba5370;
+                        a {
+                            color: black;
+                        }
                     }
                 }
-            }
-            form{
-                button{
-                    color: #D9A08B;
+
+                form .d-flex {
+                    color: #d9a08b;
+                    border-color: #ba5370;
+
+                }
+                
+                button .myButton .btn-outline-success {
+                    border-color: #ba5370;
+                    border-radius: 10px !important;
+                }
+
+
+                button .myButton  .btn-outline-success:hover {
+                    color: #fafafa;
+                    background-image: linear-gradient(to top right, #bb5471, #f4e2d8)!important;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
-    }
     }
 }
